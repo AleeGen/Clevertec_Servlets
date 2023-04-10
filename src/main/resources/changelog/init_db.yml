@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: changelog/create_schema.yml
+  - include:
+      file: changelog/create_table_product.yml
+  - include:
+      file: changelog/create_table_card.yml
+  - include:
+      file: changelog/insert_table_card.yml
+  - include:
+      file: changelog/insert_table_product.yml

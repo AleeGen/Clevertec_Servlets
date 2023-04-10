@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: alexey
+      changes:
+        - loadData:
+            tableName: product
+            schemaName: custom
+            file: changelog/data/products.csv
+            separator: ','
+            columns:
+              - column:
+                  name: description
+                  type: string
+              - column:
+                  name: price
+                  type: double
+              - column:
+                  name: promotional
+                  type: boolean

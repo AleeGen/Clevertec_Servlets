@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: alexey
+      changes:
+        - loadData:
+            tableName: discount_card
+            schemaName: custom
+            file: changelog/data/cards.csv
+            separator: ','
+            columns:
+              - column:
+                  name: number
+                  type: int
+              - column:
+                  name: discount
+                  type: int
