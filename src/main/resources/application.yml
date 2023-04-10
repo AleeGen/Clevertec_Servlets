@@ -1,0 +1,4 @@
+is_init_db: true
+pagination:
+  page_size: 2
+  number_page: 0

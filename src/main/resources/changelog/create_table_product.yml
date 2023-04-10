@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: alexey
+      changes:
+        - createTable:
+            tableName: product
+            schemaName: custom
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: description
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: real
+                  constraints:
+                    nullable: false
+              - column:
+                  name: promotional
+                  type: boolean
+                  constraints:
+                    nullable: false

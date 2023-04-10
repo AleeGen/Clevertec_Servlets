@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: alexey
+      changes:
+        - sql:
+            sql: "CREATE SCHEMA custom"

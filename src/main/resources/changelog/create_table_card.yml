@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: alexey
+      changes:
+        - createTable:
+            tableName: discount_card
+            schemaName: custom
+            columns:
+              - column:
+                  name: number
+                  type: int
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: discount
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
